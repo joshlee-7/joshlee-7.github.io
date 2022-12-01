@@ -1,5 +1,5 @@
 .background {
-  background-color: #cbc3e3;
+  width: 100%;
 }
 
 body {
@@ -7,42 +7,68 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
-#home {
+main {
   text-align: center;
 }
 
+h1 {
+  margin: 0;
+}
+
+a {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  background-color: #cbc3e3;
+  margin-left: -8px;
+  z-index: 1;
+}
+
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.main-padding {
+  padding-top: 12%;
+}
+
 .line-1 {
-  position: relative;
-  top: 50%;
-  width: 24em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  border-right: solid black;
+  font-size: 190%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+  animation: typewriter 4s steps(44) 1s 1 normal both;
 }
 
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
 @keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 24em;
+    width: 22.5em;
   }
 }
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+
+.projects {
+}
+
+.project1 {
+  width: 100%;
 }
