@@ -6,16 +6,25 @@ body {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-main {
+  background-color: #f4f7f8;
 }
 
 h1 {
   margin: 0;
 }
 
-a {
-  font-size: 20px;
+nav a:hover {
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+nav a:focus {
+  text-decoration: underline;
+}
+
+nav a.selected {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 img {
@@ -25,6 +34,7 @@ img {
 /* Navbar  */
 .navbar {
   position: fixed;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   top: 0;
@@ -35,19 +45,19 @@ img {
 }
 
 .navbar a {
-  display: block;
   color: black;
+  display: block;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
 .main-padding {
-  padding-top: 12%;
+  padding-top: 10%;
 }
 
 /* Animation in homepage */
-.line-1 {
+.welcomeAnim {
   margin: 0 auto;
   border-right: solid black;
   font-size: 190%;
@@ -68,27 +78,56 @@ img {
 }
 
 /*Projects*/
-.my_projects {
-  padding-top: 5%;
-  text-align: center;
-
-  margin: 0 auto;
-  width: 75%;
+.width {
+  justify-content: center;
+  align-items: center;
 }
 
-.project1 {
-  justify-content: center;
+.my_projects {
+  width: 70%;
+  padding-top: 2%;
+  margin: 0 auto;
+}
+
+.my_projects h1 {
+  font-size: 36px;
+}
+
+.project {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.projectImg {
+  padding-top: 2%;
+}
+
+.projectTitle {
+  padding-bottom: 2%;
 }
 
 /*Bio */
 .bioDiv {
-  margin-top: 10%;
-  margin-left: 20%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 4%;
-  width: 50%;
-  background-color: lightgray;
+  width: 60%;
 }
 
 .bioInfo {
   display: inline;
+}
+
+.contactInfo {
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.icon {
+  height: auto;
+  width: 50px;
+  padding: 2%;
 }

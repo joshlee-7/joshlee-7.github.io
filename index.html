@@ -6,28 +6,44 @@
   <body class="background">
     <div id="home">
       <nav class="navbar">
-        <a href="/"><b>Home</b></a>
+        <a href="/" class="selected">Home</a>
         <a href="bio.html">Bio</a>
         <a href="JoshLee_Resume.pdf">My Resume</a>
       </nav>
     </div>
     <main class="main-padding">
-      <div class="line-1 anim-typewriter">
+      <div class="welcomeAnim">
         <h1>Hi there, I'm Josh Lee!</h1>
       </div>
 
-      <div class="my_projects">
+      <section class="my_projects">
         <h1>My Projects</h1>
-        <div class="project1">
-          <div>
-            Animated Gifs
-            <img src="images/Project1.PNG" />
-          </div>
-          <div class="project2">
-            Course Scheduler <img src="images/Project2.PNG" />
+        <div class="project">
+          <div class="projectTitle">
+            <h2>JS Animated Gifs</h2>
+            <a href="http://joshlee2023-a2.glitch.me/"
+              >Animated generative gifs project (click to see project)
+            </a>
+
+            <img src="images/Project1.PNG" class="projectImg" />
           </div>
         </div>
-      </div>
+        <div class="project">
+          <div class="projectTitle">
+            <h2>Course Scheduling React Project</h2>
+            <a href="https://josh-scheduler-2d177.web.app/"
+              >Northwestern CS class planner (click to see project)
+            </a>
+            <p>
+              This project allows students to see how their potential classes
+              line up schedule wise. Students can log in and save their courses
+              so that they can visit the page again later with their
+              information.
+            </p>
+            <img src="images/Project2.PNG" class="projectImg" />
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
